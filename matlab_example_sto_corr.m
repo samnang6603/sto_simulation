@@ -4,6 +4,8 @@ sps = 4;       % Samples per symbol
 timingErr = 2; % Samples of timing error
 snr = 15;      % Signal-to-noise ratio (dB)
 
+% This is a modification line
+
 txfilter = comm.RaisedCosineTransmitFilter( ...
     OutputSamplesPerSymbol=sps);
 rxfilter = comm.RaisedCosineReceiveFilter( ...
